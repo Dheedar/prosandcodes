@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pro's and Codes</title>
+	<link rel="icon" type="image" href="../img/logo2.jpg">
+	<link rel="stylesheet" type="text/css" href="../css/style1.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+	<style>
+	* {
+    box-sizing: border-box;
+  }
+  .menu {
+    float:left;
+    width:20%;
+    text-align:center;
+  }
+  .menu a {
+    background-color: blue;
+    padding:8px;
+    margin-top:7px;
+    display:block;
+    width:100%;
+    color:white;
+    text-decoration: none;
+    border-radius: 2px;
+  }
+  .main {
+    float:left;
+    width:60%;
+    padding:0 20px;
+  }
+  .right {
+    background-color: cyan;
+    float:left;
+    width:20%;
+    padding:15px;
+    margin-top:7px;
+    text-align:center;
+    border-radius: 10px;
+  }
+
+  @media only screen and (max-width:620px) {
+    /* For mobile phones: */
+    .menu, .main,.table, .right {
+      width:100%;
+    }
+</style>
+</head>
+<body bgcolor="white" style="color: black;">
+	<header>
+			<img src="../img/p's&cs.jpg" style="width: 100%"><br>
+			<button style="float: right; padding: 10px; background-color: cyan; border-radius: 10px;" id="myBtn">Login</button>
+			<button style=" padding: 10px; background-color: cyan; border-radius: 10px;"><a href="#" style="text-decoration: none;">Sign Up</button>
+	</header>
+	<br>
+<body style="font-family:Verdana;color:#aaaaaa;">
+<div style="overflow:auto">
+  <div class="menu">
+    <a href="home.html">Home</a>
+    <a href="#">Codes</a>
+    <a href="#">Gameplays</a>
+    <a href="#">King Of Chamipons</a><br>
+  </div>
+  <div class="main">
+  	<hr>
+	<h2>HTML TUTORIALS > > ></h2>
+<div class="htmlscroll">
+	<video src="../jq/jq1.mp4" style=" width: 25%;" controls></video>&nbsp&nbsp<span style="margin-top:-rem; position:absolute;">Lesson One</span>
+		<video src="../jq/jq1.mp4" style=" width: 25%;" controls></video>&nbsp&nbsp<span style="margin-top:-rem; position:absolute;">Lesson One</span>
+			<video src="../jq/jq1.mp4" style=" width: 25%;" controls></video>&nbsp&nbsp<span style="margin-top:-rem; position:absolute;">Lesson One</span>
+</div>
+  </div>
+
+  <div class="right">
+    <h2>About</h2>
+    <video src="../video/coc.mp4" controls style="width: 100%; border-radius: 20px;"><h3>CLASH OF CLANS</h3></video><br>
+    <h3>CLASH OF CLANS</h3>
+    <video src="../video/hermit.mp4" controls style="width: 100%; border-radius: 20px;"><h3>CLASH OF CLANS</h3></video><br>
+    <h3>Shadow Fight</h3>
+  </div>
+</div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">×</span>
+      <h2 style="text-align: center;">Login</h2>
+    </div>
+    <div class="modal-body" style="text-align: center;">
+    	<form name="myForm" onsubmit="validateForm()" method="post">
+    		 <p>Name:</p><br> <input type="text" name="fname" placeholder="Username" style="padding: 5px; border-radius: 5px; width: 50%; height: 5%;" required><br>
+	<p>Password: </p><input type="text" name="fpass" style="padding: 5px; border-radius: 5px; width: 50%; height: 5%;" required placeholder="Password"><br>
+	<p><button type="submit" style="padding: 5px; border-radius: 10px; background-color: red; width: 40%;"><h3>SUBMIT</h3></button></p>
+    </div>
+    	</form>
+    <div class="modal-footer" style="text-align: center;">
+      <h3>If you dont have an account with Pro's and Codes please click the sign up button</h3>
+    </div>
+  </div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+function myFunction(){
+		var x = document.getElementById('demo3');
+		x.style.fontSize = "30px";
+		x.style.color = "blue";
+	}
+	function validateForm() {
+		var x = document.form["myForm"]["fpass"];
+		var x = document.form["myForm"]["fpass"];
+		if (x == null || x == "") {
+			alert("Name and Password must be input");
+			return false;
+		}
+	}
+</script>
+
+<div style="background-color:cyan;text-align:center;padding:50px;margin-top:7px; color: white; border-top-left-radius: 20px; border-top-right-radius: 20px;" class="table;">
+	<h2>Contact Us</h2>
+	<table style="width: 100%;">
+		<tr>
+			<td style="text-align: center;">Facebook<i class="fa fa-facebook-square"></i>
+<i class="fa fa-facebook-square" style="font-size:24px"></i>
+<i class="fa fa-facebook-square" style="font-size:36px"></i>
+<i class="fa fa-facebook-square" style="font-size:48px;color:red"></i> &nbsp;&nbsp;&nbsp;www.faceboo.com/Pro's and Codes</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">Whatsapp group<i class="fa fa-facebook-square"></i>
+<i class="fa fa-facebook-square" style="font-size:24px"></i>
+<i class="fa fa-facebook-square" style="font-size:36px"></i>
+<i class="fa fa-facebook-square" style="font-size:48px;color:red"></i>+234 70 1241 6569</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">Instagram<i class="fa fa-facebook-square"></i>
+<i class="fa fa-facebook-square" style="font-size:24px"></i>
+<i class="fa fa-facebook-square" style="font-size:36px"></i>
+<i class="fa fa-facebook-square" style="font-size:48px;color:red"></i> &nbsp;&nbsp;&nbsp;;Pros_Codes</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">Twitter<i class="fa fa-facebook-square"></i>
+<i class="fa fa-facebook-square" style="font-size:24px"></i>
+<i class="fa fa-facebook-square" style="font-size:36px"></i>
+<i class="fa fa-facebook-square" style="font-size:48px;color:red"></i> &nbsp;&nbsp;&nbsp;@prosandcodes</td>
+		</tr>
+	</table>
+	© copyright Pros&codes.com
+</div>
+</body>
+</html>
